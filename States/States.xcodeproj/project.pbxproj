@@ -23,6 +23,7 @@
 		9C536DA316C08E310060C0A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C536D7E16C08E310060C0A7 /* Foundation.framework */; };
 		9C536DAB16C08E310060C0A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C536DA916C08E310060C0A7 /* InfoPlist.strings */; };
 		9C536DAE16C08E310060C0A7 /* StatesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C536DAD16C08E310060C0A7 /* StatesTests.m */; };
+		9C536DBA16C090340060C0A7 /* states.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C536DB916C090340060C0A7 /* states.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		9C536DAA16C08E310060C0A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9C536DAC16C08E310060C0A7 /* StatesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatesTests.h; sourceTree = "<group>"; };
 		9C536DAD16C08E310060C0A7 /* StatesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatesTests.m; sourceTree = "<group>"; };
+		9C536DB916C090340060C0A7 /* states.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = states.json; path = Resources/Data/states.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 		9C536DB816C08EB60060C0A7 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				9C536DB916C090340060C0A7 /* states.json */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				9C536D9116C08E310060C0A7 /* Default@2x.png in Resources */,
 				9C536D9316C08E310060C0A7 /* Default-568h@2x.png in Resources */,
 				9C536D9916C08E310060C0A7 /* LDTViewController.xib in Resources */,
+				9C536DBA16C090340060C0A7 /* states.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +474,7 @@
 				9C536DB316C08E310060C0A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C536DB416C08E310060C0A7 /* Build configuration list for PBXNativeTarget "StatesTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +483,7 @@
 				9C536DB616C08E310060C0A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
