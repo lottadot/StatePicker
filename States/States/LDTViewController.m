@@ -8,7 +8,7 @@
 
 #import "LDTViewController.h"
 
-@interface LDTViewController ()
+@interface LDTViewController () 
 @property (strong, nonatomic) NSArray *states;
 
 - (NSArray *)loadStatesWithError:(NSError *)error;
@@ -41,5 +41,33 @@
     NSArray *states = [parsedJSON valueForKeyPath:@"states.state"];
     return states;
 }
+
+#pragma mark - UIPickerViewDataSource
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+	return [_states count];
+}
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+	return 1;
+}
+
+#pragma mark - UIPickerViewDelegate
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    NSDictionary *stateInfo = [_states objectAtIndex:row];
+	return [stateInfo valueForKey:@"name"];
+}
+
+
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
+    NSDictionary *stateInfo = [_states objectAtIndex:row];
+	NSLog(@"selected state:%@", [stateInfo valueForKey:@"name"]);
+}
+
 
 @end

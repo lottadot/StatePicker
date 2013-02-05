@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LDTViewController : UIViewController
+@interface LDTViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
+@property (weak, nonatomic) IBOutlet UIPickerView *statePickerView;
 
 @end
